@@ -11,8 +11,8 @@ import pandas as pd
 from sklearn import datasets, model_selection
 from tqdm import tqdm
 
-meta_info_path = 'D:/655aeaf1-2c53-4625-bbba-6b008e46fea8-track_a_learn/track_a_learn_label.csv'
-data_path = "D:/opensource_resized_image"
+meta_info_path = '/storages/hdd0/pt0/ProjectAlaska2Datas/Datasets/track_a_learn_label.csv'
+data_path = "/storages/hdd0/pt0/ProjectAlaska2Datas/Datasets/output_images/StreamOrder/"
 
 df = pd.read_csv(meta_info_path)
 df['filename'] = df['filename'].apply(str)
