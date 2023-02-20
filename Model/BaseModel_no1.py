@@ -24,7 +24,7 @@ for i, d in enumerate(dirs):
     print(i, 'and', d)
 
 files = os.listdir(data_path)
-for f in files:
+for f in files[:10000]:
     #이미지 오픈
     img = Image.open(data_path + "/" + f)
     f = f.rstrip('.png')
